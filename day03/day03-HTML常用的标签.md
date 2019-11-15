@@ -22,6 +22,13 @@ The **Head** is the part of an HTML document that contains metadata about that d
 
 **04、**定义title标签，即文档的标题
 
+## 块级元素与内联元素
+ - 块级元素：在浏览器显示时，通常会以新行来开始（和结束）
+    - 如：`<h1>,<p>,<ul>,<div>`
+ - 内联元素：在显示时通常不以新行开始
+    - 如：`<span>、<b>、<a>、<img>`
+## div与 span
+> 两者是没有"语意"的标签，`<div>`元素常用于对大的内容块设置样式属性，`<span>`用作文本的容器，结合CSS为文本设置样式属性。
 
 
 
