@@ -1,0 +1,71 @@
+
+/* id选择器， 唯一的 */
+#nav-box{
+
+    white-space: nowrap;
+    background-color: salmon;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 100px;
+}
+
+
+#test{
+
+    /* 默认值。内容不会被修剪，会呈现在元素框之外*/
+    overflow: visible;
+
+    /* 内容会被修剪，并且其余内容不可见 */
+    overflow: hidden;
+
+    /* 内容会被修剪，浏览器会显示滚动条以便查看其余内容*/
+    overflow: scroll;
+
+    /* 由浏览器定夺， 如果内容被修剪，就会显示滚动条（默认值）*/
+    overflow: auto;
+
+    /* 规定从父元素继承overflow属性的值 */
+    overflow: inherit;
+
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* id选择器 */
+.line{
+    height: 1px;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+div > span{
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    line-height: 40px;
+}
+
+div :first-child{
+    margin-left: 15px;
+}
+div :last-child{
+    margin-right: 15px;
+}
+
+#button{
+    height: 40px;
+    line-height: 40px;
+    background-color: violet;
+    border-radius: 5px;
+    color: white;
+    margin-top: 100px;
+    width: 160px;
+    text-align: center;
+}
+
+#d {
+    color: greenyellow;
+}
