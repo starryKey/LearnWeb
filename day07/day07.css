@@ -1,0 +1,23 @@
+
+/* 标签选择器 */
+p{
+     color: darkorange;
+}
+
+/* 类选择器 */
+.test-one{
+    font-size: 20px;
+    color: cyan;
+    text-decoration: line-through;
+}
+/* id选择器 */
+#test-second{
+    color: cyan;
+    font-size: 15px;
+    text-align: center;
+}
+/* 通用选择器 */
+*{
+    margin: 0px;
+    padding: 0px;
+}

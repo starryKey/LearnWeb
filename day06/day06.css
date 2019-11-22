@@ -40,7 +40,7 @@
     background-color: gray;
     margin-top: 10px;
 }
-
+/* 伪选择器 */
 div > span{
     font-size: 20px;
     color: white;
