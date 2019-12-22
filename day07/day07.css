@@ -1,23 +1,89 @@
 
-/* 标签选择器 */
+/* (一)、标签选择器 */
 p{
      color: darkorange;
 }
 
-/* 类选择器 */
+/* (二)、类选择器 */
 .test-one{
     font-size: 20px;
     color: cyan;
     text-decoration: line-through;
 }
-/* id选择器 */
+/* (三)、id选择器 */
 #test-second{
     color: cyan;
     font-size: 15px;
     text-align: center;
 }
-/* 通用选择器 */
+/* (四)、通用选择器 */
 *{
     margin: 0px;
     padding: 0px;
 }
+
+/* (五)、属性选择器*/
+
+/*01、匹配所有使用属性‘lee’的元素*/
+[lee]{
+    background-color:green;
+}
+/*02、匹配所有使用属性为‘lee’，且值为red的元素*/
+[lee="red"]{
+    background-color: cyan;
+}
+/*03、匹配所有使用属性为‘lee’，且包含dark的元素*/
+[lee~="test"]{
+    background-color: darkorange;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+[focus^=val]{
+    color: darkred;
+}
+
+[focus$=val]{
+    color: greenyellow;
+}
+[focus*=is]{
+    font-weight: 900;
+    color: hotpink;
+}
+
+
+/* (六)、伪选择器（ 包含伪类和伪元素）*/
+
+/* 匹配超链接样式 */
+a {
+    color: red;
+    font-weight: bold;
+}
+/* 访问后的状态 */
+ a:visited {
+     color: greenyellow;
+ }
+ /* 鼠标悬停、点击、聚焦时的样式 */
+ a:hover,
+ a:active,
+ a:focus {
+    color: hotpink;
+    text-decoration: line-through;
+ }
+
+ /* 伪元素选择器 */
+ /* p::first-letter{
+     font-weight: 900;
+     color: red;
+     background-color: goldenrod;
+ }
+ p::first-line{
+    font-size: 3em;
+ }
+
+ p::after{
+     content: '😄';
+ } */
+ 
+
+

@@ -11,5 +11,45 @@
 
     <p>一起学习前端</p>
     <div class="test-one">学习CSS哦！</div>
+    <div>匹配所有使用属性‘lee’的元素
+        <p style="color: rebeccapurple;" lee>测试下属性选择器</p>
+        <p style="color: orangered;" lee>测试下属性选择器</p>
+        <p style="color: orange;" lee>测试下属性选择器</p>
+    </div>
+    <div>匹配所有使用属性为‘lee’，且值为red的元素
+        <p style="color: red;" lee="red">测试下属性选择器</p>
+    </div>
+    <div>匹配所有使用属性为‘lee’，且包含test的元素
+        <p style="color: darkblue;" lee="this is test darkblue">测试下属性选择器</p>
+        <p style="color: darkorchid;" lee="this is test darkorchid">测试下属性选择器</p>
+    </div>
+
+    <div>类似正则表达式的属性选择器
+        <p focus='valtest'>匹配以 val 开头的元素</p>
+        <p focus="testval">匹配以 val 结尾的元素</p>
+        <p focus='this is a val test'>匹配包含 test 的字符串的元素</p>
+    </div>
+
+    <div>伪选择器
+        <a href="https://www.baidu.com" target="_blank">百度一下 你就知道</a>
+        <!-- <a href="">已经访问过该链接了</a> -->
+    </div>
+    <div>伪元素</div>
+
+    <div>组合选择器
+        <div>
+            <p>|__div->p1</p>
+            <p>|__div->p2</p>
+            <section>
+                <p>|_____div->section->p</p>
+                <p>|_____div->section->p</p>
+                <div>|_____div->section->div</div>
+            </section>
+        </div>
+            <p>|__p1</p>
+            <p>|__p2</p>
+
+    </div>
+
 </body>
 </html>
