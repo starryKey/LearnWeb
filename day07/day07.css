@@ -72,18 +72,25 @@ a {
  }
 
  /* 伪元素选择器 */
- /* p::first-letter{
+ p:first-letter{
      font-weight: 900;
      color: red;
      background-color: goldenrod;
  }
- p::first-line{
+ p:first-line{
     font-size: 3em;
  }
 
- p::after{
+ p:after{
      content: '😄';
- } */
+ }
  
 
 
+@media(min-width: 801px){
+    body{
+        margin: 0 auto;
+        background-color: red;
+        width: 800px;
+    }
+}
